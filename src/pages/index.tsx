@@ -7,20 +7,12 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ title = 'Bem vindo ao NextJS' }) => (
   <div className="container">
     <Head>
-      <title>{ title }</title>
+      <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1 className="title">
-        { title }
-      </h1>
-
-      <p className="description">
-        Get started by editing
-        {' '}
-        <code>pages/index.js</code>
-      </p>
+      <h1 className="title">{title}</h1>
 
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
@@ -46,9 +38,7 @@ const Home: React.FC<HomeProps> = ({ title = 'Bem vindo ao NextJS' }) => (
           className="card"
         >
           <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
+          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
     </main>
@@ -59,9 +49,7 @@ const Home: React.FC<HomeProps> = ({ title = 'Bem vindo ao NextJS' }) => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by
-        {' '}
-        <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+        Powered by <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
       </a>
     </footer>
 
@@ -196,7 +184,6 @@ const Home: React.FC<HomeProps> = ({ title = 'Bem vindo ao NextJS' }) => (
           }
         }
       `}
-
     </style>
 
     <style jsx global>
@@ -214,7 +201,6 @@ const Home: React.FC<HomeProps> = ({ title = 'Bem vindo ao NextJS' }) => (
           box-sizing: border-box;
         }
       `}
-
     </style>
   </div>
 );
