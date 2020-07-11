@@ -1,16 +1,20 @@
 import Head from 'next/head'
 
-export default function Home() {
+interface HomeProps {
+  title: string;
+}
+
+export default function Home({ title = 'Bem vindo ao meu projeto NextJS' }: HomeProps) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>{ title }</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          React Avançado!
+          { title }
         </h1>
 
         <p className="description">
